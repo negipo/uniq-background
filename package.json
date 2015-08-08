@@ -1,0 +1,14 @@
+{
+  "name": "uniq-background",
+  "main": "./lib/uniq-background",
+  "version": "0.0.0",
+  "description": "uniq-background closes panes other than current pane.",
+  "repository": "https://github.com/negipo/uniq-background",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0"
+  },
+  "dependencies": {
+    "blueimp-md5": "^1.1.1"
+  }
+}
