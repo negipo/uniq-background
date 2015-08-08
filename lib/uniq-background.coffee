@@ -15,9 +15,6 @@ module.exports =
     return unless item
 
     view = atom.views.getView(item)
-    return if view.className.indexOf('processed') != -1
-
-    view.className = view.className + ' processed'
     scrollView = view.shadowRoot.querySelector('.scroll-view')
     return unless scrollView
 
