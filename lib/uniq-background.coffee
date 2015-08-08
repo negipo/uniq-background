@@ -7,7 +7,7 @@ module.exports =
   ]
 
   activate: ->
-    atom.workspace.observePaneItems((item) =>
+    atom.workspace.observeTextEditors((item) =>
       @appendImage(item)
     )
 
@@ -22,14 +22,6 @@ module.exports =
     image = document.createElement('img')
     image.className = 'uniq-image'
     image.src = src
-    image.style.width = '80%';
-    image.style.position = 'absolute';
-    image.style.top ='50%';
-    image.style.left = '50%';
-    image.style.marginLeft = '-40%';
-    image.style.marginTop = '-20%';
-    image.style.opacity = '0.2';
-    image.style.zIndex = 100;
     scrollView.appendChild(image)
 
   srcForPath: (path)->
