@@ -10,30 +10,20 @@ module.exports =
 
   activate: ->
     @subscriptions = new CompositeDisposable
-    @subscriptions.add atom.commands.add 'atom-workspace',
-      'uniq-background:add-uniq-background-for-current-items': => @addUniqBackgroundForCurrentItems()
-
-    atom.workspace.observeTextEditors((item) =>
+    @subscriptions.add(atom.workspace.observeTextEditors((item) =>
       @addUniqBackground(item)
-    )
-
-  addUniqBackgroundForCurrentItems: ->
-    for item in atom.workspace.getPaneItems()
-      @addUniqBackground(item)
+    ))
 
   addUniqBackground: (item) ->
     return unless item
 
     view = atom.views.getView(item)
-    scrollView = view.shadowRoot.querySelector('.scroll-view:not(.processed-uniq-background)')
-    return unless scrollView
-    scrollView.className = scrollView.className + ' processed-uniq-background'
 
     src = @srcForPath(item.getPath())
     image = document.createElement('img')
     image.className = 'uniq-image'
     image.src = src
-    scrollView.appendChild(image)
+    view.shadowRoot.appendChild(image)
 
   srcForPath: (path)->
     number = parseInt(md5(path), 16)
