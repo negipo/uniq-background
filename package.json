@@ -2,7 +2,7 @@
   "name": "uniq-background",
   "main": "./lib/uniq-background",
   "version": "0.1.0",
-  "description": "uniq-background closes panes other than current pane.",
+  "description": "uniq-background displays background images into your each panes.",
   "repository": "https://github.com/negipo/uniq-background",
   "license": "MIT",
   "engines": {
