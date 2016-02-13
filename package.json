@@ -1,7 +1,7 @@
 {
   "name": "uniq-background",
   "main": "./lib/uniq-background",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "uniq-background displays background images into your each panes.",
   "repository": "https://github.com/negipo/uniq-background",
   "license": "MIT",
