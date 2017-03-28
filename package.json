@@ -6,7 +6,7 @@
   "repository": "https://github.com/negipo/uniq-background",
   "license": "MIT",
   "engines": {
-    "atom": ">=1.0"
+    "atom": ">=1.13"
   },
   "dependencies": {
     "blueimp-md5": "^1.1.1"
