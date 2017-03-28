@@ -28,7 +28,7 @@ module.exports =
     image = document.createElement('img')
     image.className = 'uniq-image'
     image.src = src
-    view.shadowRoot.appendChild(image)
+    view.appendChild(image)
 
   srcForPath: (path)->
     number = parseInt(md5(path), 16)
