@@ -6,5 +6,8 @@
 
 You can configure images [like this](https://gist.github.com/negipo/f6a8424d27462e396a2a) with `~/.atom/config.cson`.
 
+# Collabolators
+- Dirk Thomas
+
 # Acknowledgements
 Default gifs are from [Open GIFs](http://publicdomaingifs.tumblr.com/).
